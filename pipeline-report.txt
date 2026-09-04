@@ -1,0 +1,169 @@
+CARTFORGE — JENKINS PIPELINE REPORT
+===================================
+
+Project: CartForge
+Repository: rohit-surve26/cartforge
+CI/CD Tool: Jenkins
+Pipeline: CartForge-Pipeline
+
+1. PIPELINE OVERVIEW
+--------------------
+
+The CartForge project uses Jenkins to implement a Continuous
+Integration (CI) pipeline connected to GitHub.
+
+The pipeline is automatically triggered when a new commit is
+pushed to the GitHub repository through a GitHub webhook.
+
+Pipeline stages:
+
+1. Clone Source Code
+2. Install Dependencies
+3. Build Application
+4. Run Tests
+5. Package Application
+6. Deliver Artifact
+
+
+2. BUILD HISTORY
+----------------
+
+Build #1:
+Status: SUCCESS
+
+Build #2:
+Status: SUCCESS
+Trigger: GitHub push webhook
+Git revision: c471b16
+Commit message: Test GitHub webhook trigger
+
+
+3. PIPELINE EXECUTION
+---------------------
+
+Build #2 completed successfully.
+
+Approximate total execution time:
+16 seconds
+
+All six pipeline stages completed successfully:
+
+Clone Source Code       - SUCCESS
+Install Dependencies    - SUCCESS
+Build Application       - SUCCESS
+Run Tests               - SUCCESS
+Package Application     - SUCCESS
+Deliver Artifact        - SUCCESS
+
+
+4. ARTIFACT
+-----------
+
+The pipeline successfully created the application artifact:
+
+cartforge-application.tar.gz
+
+Artifact size:
+36.17 KiB
+
+The artifact was produced during the packaging stage and
+successfully delivered by the pipeline.
+
+
+5. GITHUB WEBHOOK
+-----------------
+
+The GitHub webhook integration was successfully tested.
+
+Build #2 was automatically started following a GitHub push
+by rohit-surve26.
+
+This confirms that the GitHub repository is successfully
+connected to Jenkins and that source-code changes can trigger
+the CI pipeline automatically.
+
+
+6. CONSOLE/BUILD ANALYSIS
+-------------------------
+
+The successful completion of all six stages indicates that:
+
+- Jenkins successfully obtained the source code.
+- Project dependencies were installed successfully.
+- The application build completed without errors.
+- Automated tests completed successfully.
+- The application was packaged successfully.
+- The final artifact was successfully generated and delivered.
+
+No failed stages were observed in Build #1 or Build #2.
+
+
+7. CI WORKFLOW
+--------------
+
+The implemented workflow is:
+
+Developer
+    |
+    | git push
+    v
+GitHub Repository
+    |
+    | Webhook
+    v
+Jenkins
+    |
+    v
+CartForge-Pipeline
+    |
+    +--> Clone Source Code
+    |
+    +--> Install Dependencies
+    |
+    +--> Build Application
+    |
+    +--> Run Tests
+    |
+    +--> Package Application
+    |
+    +--> Deliver Artifact
+    |
+    v
+cartforge-application.tar.gz
+
+
+8. IMPROVEMENTS SUGGESTED
+-------------------------
+
+The current pipeline successfully performs the basic CI workflow.
+The following improvements could be implemented in future versions:
+
+1. Add code-quality checks such as ESLint.
+2. Add test coverage reporting.
+3. Add security and dependency vulnerability scanning.
+4. Store build artifacts in a dedicated artifact repository.
+5. Add Docker image creation and publishing.
+6. Add deployment to a development or staging environment.
+7. Add approval gates before production deployment.
+8. Add notifications for failed builds.
+9. Add pipeline performance monitoring.
+10. Implement automated rollback for deployment failures.
+
+
+9. CONCLUSION
+-------------
+
+The CartForge Jenkins CI pipeline is functioning successfully.
+
+Both Build #1 and Build #2 completed successfully, and Build #2
+demonstrated successful automatic triggering through the GitHub
+webhook.
+
+The pipeline completed all six defined stages and generated the
+cartforge-application.tar.gz artifact.
+
+This demonstrates a working GitHub-to-Jenkins Continuous
+Integration workflow for the CartForge project.
+
+
+Report Status: COMPLETE
