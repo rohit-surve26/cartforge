@@ -1,0 +1,23 @@
+{
+  "name": "cartforge",
+  "version": "1.0.0",
+  "description": "Test 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohit-surve26/cartforge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohit-surve26/cartforge/issues"
+  },
+  "homepage": "https://github.com/rohit-surve26/cartforge#readme",
+  "devDependencies": {
+    "jest": "^30.5.1"
+  }
+}
